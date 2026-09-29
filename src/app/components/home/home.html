@@ -1,0 +1,19 @@
+<section class="bg-light py-5">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold">Welcome to {{eventName}}</h1>
+
+    <p class="lead text-muted">
+      This is a simple homepage built with Angular and Bootstrap.
+    </p>
+    
+    <input type="text" [(ngModel)]="inputItem" class="form-control mt-4" placeholder="Enter your name" />
+        <h1 class="mt-4">{{inputItem}}</h1>
+    <button class="btn btn-success btn-lg mt-4" (click)="click()">
+      Click Me
+    </button>
+
+  </div>
+</section>
+
+<!-- Cards -->
+<app-event-list></app-event-list>
